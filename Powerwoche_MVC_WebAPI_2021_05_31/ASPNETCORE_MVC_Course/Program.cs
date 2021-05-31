@@ -17,7 +17,13 @@ namespace ASPNETCORE_MVC_Course
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args) //Default WebServer ist Kestrel mit eingebunden
+            Host.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                {
+                    //IConfiguration kennt jetzt die samplewebsetting.json 
+                    config.AddJsonFile("samplewebsettings.json", optional: false, reloadOnChange: true);
+                })
+                //Default WebServer ist Kestrel mit eingebunden
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

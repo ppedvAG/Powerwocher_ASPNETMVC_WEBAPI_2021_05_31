@@ -1,0 +1,108 @@
+﻿@model ASPNETCORE_MVC_Course.ViewModels.MovieOverviewVM
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    int value = 1;
+    void RenderText(string text)
+    {
+        <p>Ausgabe : <strong>@text</strong></p>
+    }
+}
+
+<h1>Index</h1>
+
+<p>@Model.Movie.Title</p>
+<p>@Model.Movie.Description</p>
+
+@if (Model.Movie.Title == "ES")
+{
+    <p>Bitte FSK 18 beachten!</p>
+}
+
+
+@if (Model.Casts.Count() == 0)
+{
+    RenderText("Alle Schauspieler wollten sich nicht mit diesen Film in Verbindung bringen");
+    <p>Alle Schauspieler wollten sich nicht mit diesen Film in Verbindung bringen</p>
+}
+else
+{
+    <table class="table">
+
+        <thead>
+            <!-- Tabellen ColumnHeader Zeile -->
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Casts[0].Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Casts[0].Firstname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Casts[0].Lastname)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Artists currentArtist in Model.Casts)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => currentArtist.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => currentArtist.Firstname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => currentArtist.Lastname)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+
+    </table>
+}
+
+@switch (value)
+{
+    case 1:
+        RenderText("Value hat den Wert 1");
+        break;
+    default:
+        RenderText("Valuewert ist nicht bekannt");
+        break;
+}
+
+@using (Html.BeginForm())
+{
+    <div>
+        Email: <input type="email" id="Email" value="">
+        <button>Register</button>
+    </div>
+}
+
+<!-- HTML Helper -->
+@Html.ActionLink("Back to Startseite", "Index", "Home"); //Ich bin ein Link 
+<a asp-action="Index" asp-controller="Home">Text</a>
+
+
+@Context.User // aktuell angemeldete User
+
+
+
+            
+
+
+
+
+
+

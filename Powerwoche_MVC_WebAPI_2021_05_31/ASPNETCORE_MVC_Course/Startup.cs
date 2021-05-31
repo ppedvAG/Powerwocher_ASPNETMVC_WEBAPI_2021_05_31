@@ -1,3 +1,4 @@
+using ASPNETCORE_MVC_Course.Models;
 using DependencyInjectionsSampleLib;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Westwind.AspNetCore.LiveReload;
 
 namespace ASPNETCORE_MVC_Course
 {
@@ -24,7 +26,9 @@ namespace ASPNETCORE_MVC_Course
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) //IServiceCollection = IOC-Containter ->Verwendungsonzept = seperation of concerns 
         {
-            services.AddControllersWithViews(); //Ich arbeite mit MVC (MVC Framework wird mit eingebunden
+            //.AddRazorRuntimeCompilation(); -> befindet sich in diesem Package (muss installiert (Package Manager) werden) -> Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+            services.AddControllersWithViews().AddRazorRuntimeCompilation(); //Ich arbeite mit MVC (MVC Framework wird mit eingebunden
+            services.AddLiveReload();
 
             #region Tag 1 - Mögliche ASP.NET Core framework technologien einginden (RazorPages, WebAPI.....)
             //Konvetionen für AddControllersWithViews = benötigt ein Verzeichnis mit dem Namen Controllers + Views
@@ -36,10 +40,15 @@ namespace ASPNETCORE_MVC_Course
 
             //services.AddRazorPages(); //Razor Page Framework wird mit eingebunden
             //Konvention für RazorPages -> Benötigt das Pages-Verzeichnis
+
+            //services.AddMvc(); // -> AddControllersWithViews & AddRazorPages (wird intern aufgerufen) 
             #endregion
 
             services.AddSingleton(typeof(ICar), typeof(MockCar));
             services.AddSingleton(typeof(ICar), typeof(Car)); //Car überschreibt MockCar
+
+            services.Configure<SampleWebSettings>(Configuration);
+
             //services.AddTransient(typeof(ICarService), typeof(CarService));
             //services.AddScoped(typeof(ICar), typeof(Car));
             //services.AddScoped<ICar, Car>();
@@ -51,7 +60,7 @@ namespace ASPNETCORE_MVC_Course
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage(); //Exceptions mit CallStack sind für Entwickler 
-
+                app.UseLiveReload();
             }
             else
             {
