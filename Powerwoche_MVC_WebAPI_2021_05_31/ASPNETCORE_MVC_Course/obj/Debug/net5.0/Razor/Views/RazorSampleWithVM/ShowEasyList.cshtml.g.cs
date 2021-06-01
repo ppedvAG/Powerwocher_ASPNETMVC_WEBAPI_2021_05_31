@@ -27,7 +27,7 @@ using ASPNETCORE_MVC_Course.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9806354643314d700633ac89fbe09a5bdd9571ef", @"/Views/RazorSampleWithVM/ShowEasyList.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9b8559dc12b45c32f95857b06ba87fa577dd01f6", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"78bc821a537b0833fdb0ae9b9c4a0268977c4b5d", @"/Views/_ViewImports.cshtml")]
     public class Views_RazorSampleWithVM_ShowEasyList : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<ASPNETCORE_MVC_Course.Models.Artists>>
     {
         #pragma warning disable 1998

@@ -27,7 +27,7 @@ using ASPNETCORE_MVC_Course.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f0bca9bb50d8681e26efa80d567d36677cafee4e", @"/Views/ConfigurationSample/Sample2.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9b8559dc12b45c32f95857b06ba87fa577dd01f6", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"78bc821a537b0833fdb0ae9b9c4a0268977c4b5d", @"/Views/_ViewImports.cshtml")]
     public class Views_ConfigurationSample_Sample2 : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

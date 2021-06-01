@@ -21,9 +21,6 @@ namespace ASPNETCORE_MVC_Course.Controllers
                 Description = "Irgendwas mit einem freundlichen Clown ;-) "
             };
 
-
-            
-
             if (movieOverviewVM.Casts == null)
                 movieOverviewVM.Casts = new List<Artists>();
 
