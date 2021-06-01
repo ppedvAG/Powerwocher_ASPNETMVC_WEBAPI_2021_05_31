@@ -1,4 +1,4 @@
-using ASPNETCORE_MVC_Course.Models;
+ï»¿using ASPNETCORE_MVC_Course.Models;
 using DependencyInjectionsSampleLib;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,6 +11,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Westwind.AspNetCore.LiveReload;
+using Microsoft.EntityFrameworkCore;
+using ASPNETCORE_MVC_Course.Data;
 
 namespace ASPNETCORE_MVC_Course
 {
@@ -30,28 +32,37 @@ namespace ASPNETCORE_MVC_Course
             services.AddControllersWithViews().AddRazorRuntimeCompilation(); //Ich arbeite mit MVC (MVC Framework wird mit eingebunden
             services.AddLiveReload();
 
-            #region Tag 1 - Mögliche ASP.NET Core framework technologien einginden (RazorPages, WebAPI.....)
-            //Konvetionen für AddControllersWithViews = benötigt ein Verzeichnis mit dem Namen Controllers + Views
+            #region Tag 1 - Mï¿½gliche ASP.NET Core framework technologien einginden (RazorPages, WebAPI.....)
+            //Konvetionen fï¿½r AddControllersWithViews = benï¿½tigt ein Verzeichnis mit dem Namen Controllers + Views
 
             //services.AddControllers(); //WebAPI 
-            //Konvention für AddControllers -> Benötigt Controller Verziechnis
+            //Konvention fï¿½r AddControllers -> Benï¿½tigt Controller Verziechnis
 
-            //Wenn MVC + WebAPI in einem Projekt stehen sollten, dann wäre es sinnvoll, ein Controller/API Verzeichnis für die WebAPI Controller Klassen zu verwednen.
+            //Wenn MVC + WebAPI in einem Projekt stehen sollten, dann wï¿½re es sinnvoll, ein Controller/API Verzeichnis fï¿½r die WebAPI Controller Klassen zu verwednen.
 
             //services.AddRazorPages(); //Razor Page Framework wird mit eingebunden
-            //Konvention für RazorPages -> Benötigt das Pages-Verzeichnis
+            //Konvention fï¿½r RazorPages -> Benï¿½tigt das Pages-Verzeichnis
 
             //services.AddMvc(); // -> AddControllersWithViews & AddRazorPages (wird intern aufgerufen) 
             #endregion
 
             services.AddSingleton(typeof(ICar), typeof(MockCar));
-            services.AddSingleton(typeof(ICar), typeof(Car)); //Car überschreibt MockCar
+            services.AddSingleton(typeof(ICar), typeof(Car)); //Car ï¿½berschreibt MockCar
 
             services.Configure<SampleWebSettings>(Configuration);
+
+
+            //Intern wird hier das EF Core (DbContext-Klasse-> ASPNETCORE_MVC_CourseContext) mit der SCOPE-Lifetime definiert. 
+            //Bei jedem Request bekommen wir einen frischen Datenstand
+            services.AddDbContext<MovieDbContext>(options =>
+                    options.UseInMemoryDatabase("MovieDB"));
 
             //services.AddTransient(typeof(ICarService), typeof(CarService));
             //services.AddScoped(typeof(ICar), typeof(Car));
             //services.AddScoped<ICar, Car>();
+
+
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,7 +70,7 @@ namespace ASPNETCORE_MVC_Course
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage(); //Exceptions mit CallStack sind für Entwickler 
+                app.UseDeveloperExceptionPage(); //Exceptions mit CallStack sind fï¿½r Entwickler 
                 app.UseLiveReload();
             }
             else
@@ -73,19 +84,19 @@ namespace ASPNETCORE_MVC_Course
             app.UseHttpsRedirection(); //https://localhost:12345/Home/Index -> https kann verwendet werden
             app.UseStaticFiles(); //wwwroot verzeichnis wird auch als statisch angesehen. 
 
-            app.UseRouting(); //Routing -> Umleitung von Seite A nach B -> Routing-Pattern sind jetzt möglich
+            app.UseRouting(); //Routing -> Umleitung von Seite A nach B -> Routing-Pattern sind jetzt mï¿½glich
              
             app.UseAuthorization(); //Authrization -> AuthSchema ist vorhanden
-
+            app.UseSession();
 
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}"); //Default Muster für URL Aufbau
+                    pattern: "{controller=Home}/{action=Index}/{id?}"); //Default Muster fï¿½r URL Aufbau
 
-                //Default https://localhost:12345/ [Enter] -> löst auf Startseite auf -> https://localhost:12345/Home/Index
+                //Default https://localhost:12345/ [Enter] -> lï¿½st auf Startseite auf -> https://localhost:12345/Home/Index
             });
         }
     }

@@ -26,8 +26,15 @@ using ASPNETCORE_MVC_Course.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\Views\_ViewImports.cshtml"
+using ASPNETCORE_MVC_Course.TagHelpers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f0bca9bb50d8681e26efa80d567d36677cafee4e", @"/Views/ConfigurationSample/Sample2.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"78bc821a537b0833fdb0ae9b9c4a0268977c4b5d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"df9214a4e6db4c915d43725bfeda2d41680ab8f6", @"/Views/_ViewImports.cshtml")]
     public class Views_ConfigurationSample_Sample2 : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

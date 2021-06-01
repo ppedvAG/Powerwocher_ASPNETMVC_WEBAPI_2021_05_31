@@ -26,8 +26,15 @@ using ASPNETCORE_MVC_Course.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\Views\_ViewImports.cshtml"
+using ASPNETCORE_MVC_Course.TagHelpers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dd7e9f19369686c7f0d48ac3701b55af7d0cdab1", @"/Views/RazorSampleWithVM/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"78bc821a537b0833fdb0ae9b9c4a0268977c4b5d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"df9214a4e6db4c915d43725bfeda2d41680ab8f6", @"/Views/_ViewImports.cshtml")]
     public class Views_RazorSampleWithVM_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ASPNETCORE_MVC_Course.ViewModels.MovieOverviewVM>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -281,7 +288,7 @@ Write(Html.ActionLink("Back to Startseite", "Index", "Home"));
 #line hidden
 #nullable disable
             WriteLiteral("; //Ich bin ein Link \r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dd7e9f19369686c7f0d48ac3701b55af7d0cdab113536", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dd7e9f19369686c7f0d48ac3701b55af7d0cdab113796", async() => {
                 WriteLiteral("Text");
             }
             );

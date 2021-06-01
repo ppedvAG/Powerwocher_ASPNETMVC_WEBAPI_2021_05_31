@@ -1,0 +1,118 @@
+2021-06-01 09:47:32.461 +02:00 [INF] HomeController --> Call Index
+2021-06-01 10:44:20.514 +02:00 [INF] HomeController --> Call Index
+2021-06-01 10:50:20.190 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:04:20.578 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:09:00.791 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:10:38.942 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:13:14.722 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:19:20.287 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:26:52.338 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:28:34.753 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:30:40.459 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:33:53.707 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:49:59.435 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:50:09.682 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot determine the 'formaction' attribute for <button>. The following attributes are mutually exclusive:
+asp-route
+asp-controller, asp-action
+asp-page, asp-page-handler
+   at Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Movie_Index.<>c__DisplayClass21_0.<<ExecuteAsync>b__2>d.MoveNext() in C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\Views\Movie\Index.cshtml:line 63
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Movie_Index.ExecuteAsync() in C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\Views\Movie\Index.cshtml:line 12
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-01 11:51:37.031 +02:00 [INF] HomeController --> Call Index
+2021-06-01 11:52:00.576 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot determine the 'formaction' attribute for <button>. The following attributes are mutually exclusive:
+asp-route
+asp-controller, asp-action
+asp-page, asp-page-handler
+   at Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Movie_Index.<>c__DisplayClass21_0.<<ExecuteAsync>b__2>d.MoveNext() in C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\Views\Movie\Index.cshtml:line 63
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Movie_Index.ExecuteAsync() in C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\Views\Movie\Index.cshtml:line 12
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-01 11:53:57.129 +02:00 [INF] HomeController --> Call Index
+2021-06-01 13:13:01.358 +02:00 [INF] HomeController --> Call Index
+2021-06-01 13:27:35.590 +02:00 [INF] HomeController --> Call Index
+2021-06-01 13:38:49.878 +02:00 [INF] HomeController --> Call Index
+2021-06-01 13:54:00.488 +02:00 [INF] HomeController --> Call Index
+2021-06-01 13:56:36.835 +02:00 [INF] HomeController --> Call Index
+2021-06-01 13:58:29.148 +02:00 [INF] HomeController --> Call Index
+2021-06-01 13:59:36.862 +02:00 [INF] HomeController --> Call Index
+2021-06-01 14:03:16.585 +02:00 [INF] HomeController --> Call Index
+2021-06-01 14:11:00.097 +02:00 [INF] HomeController --> Call Index
+2021-06-01 14:14:29.110 +02:00 [INF] HomeController --> Call Index
+2021-06-01 14:16:35.044 +02:00 [INF] HomeController --> Call Index
+2021-06-01 14:26:01.243 +02:00 [INF] HomeController --> Call Index
+2021-06-01 14:56:36.042 +02:00 [INF] HomeController --> Call Index
+2021-06-01 14:59:29.731 +02:00 [INF] HomeController --> Call Index
+2021-06-01 15:14:34.043 +02:00 [INF] HomeController --> Call Index
+2021-06-01 15:28:36.052 +02:00 [INF] HomeController --> Call Index
+2021-06-01 15:33:06.864 +02:00 [INF] HomeController --> Call Index
+2021-06-01 15:42:40.353 +02:00 [INF] HomeController --> Call Index
+2021-06-01 15:44:15.953 +02:00 [INF] HomeController --> Call Index
+2021-06-01 15:45:54.858 +02:00 [INF] HomeController --> Call Index
+2021-06-01 15:47:38.385 +02:00 [INF] HomeController --> Call Index
+2021-06-01 15:48:03.922 +02:00 [INF] HomeController --> Call Index
+2021-06-01 15:54:48.601 +02:00 [INF] HomeController --> Call Index
+2021-06-01 16:02:41.734 +02:00 [INF] HomeController --> Call Index
+2021-06-01 16:04:33.628 +02:00 [INF] HomeController --> Call Index

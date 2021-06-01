@@ -1,4 +1,5 @@
-﻿using ASPNETCORE_MVC_Course.Models;
+﻿using ASPNETCORE_MVC_Course.Data;
+using ASPNETCORE_MVC_Course.Models;
 using ASPNETCORE_MVC_Course.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,8 +11,22 @@ namespace ASPNETCORE_MVC_Course.Controllers
 {
     public class RazorSampleWithVMController : Controller
     {
+
+
+        private readonly MovieDbContext _context;
+
+        public RazorSampleWithVMController(MovieDbContext context)
+        {
+            _context = context;
+        }
+        
         public IActionResult Index()
         {
+            //Hier ruft man mit einem HTTPClient z.b die WebAPI (Service-Layer) und bekommt eine Ergebnisliste
+
+            //Im Controller wird diese Liste nicht mehr manipuliert, die Liste sollte aus dem Service - Layer fertig ankommen.
+            //Der Controller soll die Liste nur an die View übergeben -> return View(OBJECT)
+
             MovieOverviewVM movieOverviewVM = new MovieOverviewVM();
             movieOverviewVM.Movie = new Models.Movie()
             {
@@ -65,6 +80,23 @@ namespace ASPNETCORE_MVC_Course.Controllers
             });
 
             return View(artists);
+        }
+
+
+        public IActionResult ShowMe()
+        {
+            return View();
+        }
+
+
+        public IActionResult HtmlHelper()
+        {
+            return View(_context.Movie.ToList());
+        }
+
+        public IActionResult CustomTagHelper()
+        {
+            return View();
         }
     }
 }

@@ -17,29 +17,38 @@ Dependency Injcetion + Konfigurationen
 - [ ] Logging + Fehlerbehandlung 
 
 Die Controller-Klasse (MVC)
-- [ ] Überblick über HTTPContext und Controller-Basisklasse
-- [ ] QueryString bei Get-Methoden
-- [ ] Ein Formular mit mehren Buttons (Post-Methoden)
-- [ ] HTML-Helper
-- [ ] TagHelpers
-
-Weitere Views
-- [ ] PartialView
-- [ ] ViewComponents & Localization
+- [x] Überblick über HTTPContext und Controller-Basisklasse
+- [x] QueryString bei Get-Methoden
+- [x] Ein Formular mit mehren Buttons (Post-Methoden)
+- [x] HTML-Helper
+- [x] TagHelpers
+- [x] Data Annotations 
+- [x] Validierung 
+- [x] Gehen Geldbeträge mit Komma 
 
 State-Management
 - [ ] ViewData////
 - [ ] ViewBag
 - [ ] TempData
 - [ ] Session-Handling
-- [ ] Gehen Geldbeträge mit Komma 
+
+Weitere Views
+- [ ] PartialView
+- [ ] ViewComponents & Localization
+
+
+- Routing
+- [ ] Konventionelles Routing
+- [ ] Attribute Routing
 
 - [ ] Middleware -> Was ist ein Pipeline (Use, Run, Map)
 - [ ] Filter
+- [ ] Identity UI in ASP.NET Core MVC
 
 - [ ] EF Core Einstieg
   - [ ] Code First / Code First Reverse
   - [ ] Repository / UnitOfWork Pattern in EF
+  - [ ] Datensatz bearbeiten > für Datensatz sperren
 
 
 
