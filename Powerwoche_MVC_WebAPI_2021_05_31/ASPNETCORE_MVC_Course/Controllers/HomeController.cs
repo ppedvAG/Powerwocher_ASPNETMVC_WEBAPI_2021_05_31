@@ -1,5 +1,6 @@
 ﻿using ASPNETCORE_MVC_Course.Models;
 using DependencyInjectionsSampleLib;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -13,12 +14,15 @@ using System.Threading.Tasks;
 
 namespace ASPNETCORE_MVC_Course.Controllers
 {
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ICar _myMockCar;
 
         private readonly IConfiguration _configuration;
+
+
 
         public HomeController(ILogger<HomeController> logger, ICar car, IConfiguration configuration)
         {
@@ -29,6 +33,8 @@ namespace ASPNETCORE_MVC_Course.Controllers
 
 
         //Index-Methode für die Startseite -> https:\\localhost\Home\Index
+
+        [AllowAnonymous]
         public IActionResult Index() //Startseite 
         {
             _logger.LogInformation("HomeController --> Call Index");
@@ -38,6 +44,9 @@ namespace ASPNETCORE_MVC_Course.Controllers
             return View();
         }
 
+
+        [Authorize("Support")]
+        [Authorize("Admins")]
         public IActionResult Privacy()
         {
 

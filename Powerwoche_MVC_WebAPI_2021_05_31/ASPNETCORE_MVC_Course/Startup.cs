@@ -32,7 +32,7 @@ namespace ASPNETCORE_MVC_Course
         public void ConfigureServices(IServiceCollection services) //IServiceCollection = IOC-Containter ->Verwendungsonzept = seperation of concerns 
         {
             //.AddRazorRuntimeCompilation(); -> befindet sich in diesem Package (muss installiert (Package Manager) werden) -> Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
-            services.AddControllersWithViews().AddRazorRuntimeCompilation(); //Ich arbeite mit MVC (MVC Framework wird mit eingebunden
+            services.AddMvc().AddRazorRuntimeCompilation(); //Ich arbeite mit MVC (MVC Framework wird mit eingebunden
             services.AddLiveReload();
 
             services.AddLocalization();
@@ -84,7 +84,7 @@ namespace ASPNETCORE_MVC_Course
             //services.AddScoped(typeof(ICar), typeof(Car));
             //services.AddScoped<ICar, Car>();
 
-
+            services.AddAuthentication();
             services.AddSession();
         }
 
@@ -108,7 +108,8 @@ namespace ASPNETCORE_MVC_Course
             app.UseStaticFiles(); //wwwroot verzeichnis wird auch als statisch angesehen. 
 
             app.UseRouting(); //Routing -> Umleitung von Seite A nach B -> Routing-Pattern sind jetzt m�glich
-             
+
+            app.UseAuthentication();
             app.UseAuthorization(); //Authrization -> AuthSchema ist vorhanden
             app.UseSession();
 
@@ -122,6 +123,7 @@ namespace ASPNETCORE_MVC_Course
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}"); //Default Muster f�r URL Aufbau
 
+                endpoints.MapRazorPages();
                 //Default https://localhost:12345/ [Enter] -> l�st auf Startseite auf -> https://localhost:12345/Home/Index
             });
         }

@@ -14,7 +14,7 @@ TAG1:
 Offene MVC-Kurs-Themen:
 
 Dependency Injcetion + Konfigurationen
-- [ ] Logging + Fehlerbehandlung 
+- [x] Logging + Fehlerbehandlung 
 
 Die Controller-Klasse (MVC)
 - [x] Überblick über HTTPContext und Controller-Basisklasse
@@ -35,7 +35,7 @@ State-Management
 Weitere Views
 - [o] PartialView
 - [x] ViewComponents & Localization
-- [ ] Identity UI in ASP.NET Core MVC
+- [x] Identity UI in ASP.NET Core MVC
 
 - Routing
 - [ ] Konventionelles Routing
