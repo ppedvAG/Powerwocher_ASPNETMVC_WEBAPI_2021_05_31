@@ -38,8 +38,8 @@ Weitere Views
 - [x] Identity UI in ASP.NET Core MVC
 
 - Routing
-- [ ] Konventionelles Routing
-- [ ] Attribute Routing
+- [x] Konventionelles Routing
+- [x] Attribute Routing
 - [ ] Middleware -> Was ist ein Pipeline (Use, Run, Map)
 - [ ] Customize Middleware für formatierte Bildausgaben (Gallery)+ In Verbindung mit einem Bild-Upload-Formular
 
