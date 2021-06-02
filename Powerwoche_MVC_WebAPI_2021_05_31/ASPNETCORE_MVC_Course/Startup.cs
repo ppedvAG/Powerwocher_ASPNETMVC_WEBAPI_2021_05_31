@@ -13,6 +13,9 @@ using System.Threading.Tasks;
 using Westwind.AspNetCore.LiveReload;
 using Microsoft.EntityFrameworkCore;
 using ASPNETCORE_MVC_Course.Data;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
 
 namespace ASPNETCORE_MVC_Course
 {
@@ -31,6 +34,26 @@ namespace ASPNETCORE_MVC_Course
             //.AddRazorRuntimeCompilation(); -> befindet sich in diesem Package (muss installiert (Package Manager) werden) -> Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
             services.AddControllersWithViews().AddRazorRuntimeCompilation(); //Ich arbeite mit MVC (MVC Framework wird mit eingebunden
             services.AddLiveReload();
+
+            services.AddLocalization();
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new[]
+                 {
+                    new CultureInfo("en"),
+                    new CultureInfo("de"),
+                    new CultureInfo("fr"),
+                    //new CultureInfo("es"),
+                    //new CultureInfo("ru"),
+                    //new CultureInfo("ja"),
+                    //new CultureInfo("ar"),
+                    //new CultureInfo("zh"),
+                    //new CultureInfo("en-GB")
+                };
+                options.DefaultRequestCulture = new RequestCulture("de");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
 
             #region Tag 1 - M�gliche ASP.NET Core framework technologien einginden (RazorPages, WebAPI.....)
             //Konvetionen f�r AddControllersWithViews = ben�tigt ein Verzeichnis mit dem Namen Controllers + Views
@@ -89,6 +112,9 @@ namespace ASPNETCORE_MVC_Course
             app.UseAuthorization(); //Authrization -> AuthSchema ist vorhanden
             app.UseSession();
 
+
+            var localizationOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>().Value;
+            app.UseRequestLocalization(localizationOptions);
 
             app.UseEndpoints(endpoints =>
             {

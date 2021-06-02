@@ -10,7 +10,7 @@ namespace ASPNETCORE_MVC_Course.Models
     {
         public int ID { get; set; }
 
-        [Required]
+        [Required (ErrorMessage = "Ein Fehler ist passiert")]
         public string Title { get; set; }
 
         [MaxLength(100)]

@@ -27,25 +27,26 @@ Die Controller-Klasse (MVC)
 - [x] Gehen Geldbeträge mit Komma 
 
 State-Management
-- [ ] ViewData////
-- [ ] ViewBag
-- [ ] TempData
-- [ ] Session-Handling
+- [x] ViewData////
+- [x] ViewBag
+- [x] TempData
+- [x] Session-Handling
 
 Weitere Views
-- [ ] PartialView
-- [ ] ViewComponents & Localization
-
+- [o] PartialView
+- [x] ViewComponents & Localization
+- [ ] Identity UI in ASP.NET Core MVC
 
 - Routing
 - [ ] Konventionelles Routing
 - [ ] Attribute Routing
-
 - [ ] Middleware -> Was ist ein Pipeline (Use, Run, Map)
-- [ ] Filter
-- [ ] Identity UI in ASP.NET Core MVC
+- [ ] Customize Middleware für formatierte Bildausgaben (Gallery)+ In Verbindung mit einem Bild-Upload-Formular
 
-- [ ] EF Core Einstieg
+- [ ] Filter
+
+
+- [ ] EF Core Einstieg (Optional....würde in WebAPI oder MVC)
   - [ ] Code First / Code First Reverse
   - [ ] Repository / UnitOfWork Pattern in EF
   - [ ] Datensatz bearbeiten > für Datensatz sperren

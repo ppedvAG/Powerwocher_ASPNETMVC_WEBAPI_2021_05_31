@@ -29,8 +29,6 @@ namespace ASPNETCORE_MVC_Course.Controllers
             }
             IList<Movie> filteredList =  string.IsNullOrEmpty(query) ? await _context.Movie.ToListAsync() : await _context.Movie.Where(q => q.Title.Contains(query)).ToListAsync();
 
-
-
             return View(filteredList);
         }
 
@@ -53,9 +51,8 @@ namespace ASPNETCORE_MVC_Course.Controllers
             if (currentMovie == null)
                 return NotFound();
 
-
-            // Hier kommt ein Beispiel für das SessionHandling
             
+            // Hier kommt ein Beispiel für das SessionHandling
 
             //Buy soll nur darstellen, dass man auch zwei Buttons in einem Formular haben darf.
             return RedirectToAction(nameof(Index));

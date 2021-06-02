@@ -465,3 +465,7 @@ C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_
 C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\obj\Debug\net5.0\Razor\Views\StateManagement\SecondTempDataSample.cshtml.g.cs
 C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\obj\Debug\net5.0\Razor\Views\StateManagement\ThirdTempDataSample.cshtml.g.cs
 C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\obj\Debug\net5.0\Razor\Views\StateManagement\InitSession.cshtml.g.cs
+C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\obj\Debug\net5.0\Razor\Views\Shared\_DatePartial.cshtml.g.cs
+C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\obj\Debug\net5.0\Razor\Views\PartialViewSample\Index.cshtml.g.cs
+C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\obj\Debug\net5.0\Razor\Views\Shared\_SpecialOfferPartialView.cshtml.g.cs
+C:\Aktueller Kurs\Powerwocher_ASPNETMVC_WEBAPI_2021_05_31\Powerwoche_MVC_WebAPI_2021_05_31\ASPNETCORE_MVC_Course\obj\Debug\net5.0\Razor\Views\Shared\Components\CultureSwitcher\Default.cshtml.g.cs
