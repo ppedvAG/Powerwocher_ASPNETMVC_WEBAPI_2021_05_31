@@ -77,6 +77,9 @@ namespace ASPNETCORE_MVC_Course.Controllers
         }
 
         // GET: Movie/Create
+
+        //[Route("movie/insert")]
+        //[Route("insert")]
         public IActionResult Create() //Leeres Formular ohne Daten wird erstellt. 
         {
             return View(); 

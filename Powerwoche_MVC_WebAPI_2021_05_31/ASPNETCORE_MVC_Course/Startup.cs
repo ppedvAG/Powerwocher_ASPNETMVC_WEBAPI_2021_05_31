@@ -119,9 +119,23 @@ namespace ASPNETCORE_MVC_Course
 
             app.UseEndpoints(endpoints =>
             {
+                //Default Route
+
+                // https://localhost:12345/Home/Index/
+                // https://localhost:12345/Home/
+                // https://localhost:12345/
+
+                //endpoints.MapControllerRoute(
+                //    name: "movie",
+                //    pattern: "movie/{*movie}",defaults: new { controller = "Movie", action = "Index" });
+
+
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}"); //Default Muster f�r URL Aufbau
+
+
 
                 endpoints.MapRazorPages();
                 //Default https://localhost:12345/ [Enter] -> l�st auf Startseite auf -> https://localhost:12345/Home/Index

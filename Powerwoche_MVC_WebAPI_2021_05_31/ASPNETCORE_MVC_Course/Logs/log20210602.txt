@@ -339,3 +339,6 @@ Error Number:2601,State:1,Class:14
 2021-06-02 13:44:17.289 +02:00 [INF] User created a new account with password.
 2021-06-02 13:44:54.237 +02:00 [INF] User logged in.
 2021-06-02 13:44:54.388 +02:00 [INF] HomeController --> Call Index
+2021-06-02 14:07:43.605 +02:00 [INF] HomeController --> Call Index
+2021-06-02 14:12:16.259 +02:00 [INF] HomeController --> Call Index
+2021-06-02 14:13:32.368 +02:00 [INF] HomeController --> Call Index
