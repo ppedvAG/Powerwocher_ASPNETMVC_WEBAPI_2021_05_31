@@ -1,0 +1,580 @@
+2021-06-04 09:48:07.416 +02:00 [INF] HomeController --> Call Index
+2021-06-04 10:00:50.768 +02:00 [INF] HomeController --> Call Index
+2021-06-04 10:00:59.895 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:00.072 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:00.094 +02:00 [ERR] Connection ID "17870283340196610093", Request ID "8000002e-0004-f800-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:01:01.441 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:01.448 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:01.455 +02:00 [ERR] Connection ID "17870283340196610095", Request ID "80000030-0004-f800-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:01:02.373 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:02.381 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:02.388 +02:00 [ERR] Connection ID "18302628895834243190", Request ID "80000077-0002-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:01:08.105 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:08.112 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:08.117 +02:00 [ERR] Connection ID "18230571318976184384", Request ID "80000041-0006-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:01:08.673 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:08.681 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:08.685 +02:00 [ERR] Connection ID "18230571318976184386", Request ID "80000043-0006-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:01:08.861 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:08.868 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:08.874 +02:00 [ERR] Connection ID "18086456113720459340", Request ID "8000004d-0002-fb00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:01:09.026 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:09.031 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:09.036 +02:00 [ERR] Connection ID "18230571318976184388", Request ID "80000045-0006-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:01:09.191 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:09.197 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:09.203 +02:00 [ERR] Connection ID "18374686511347007557", Request ID "80000046-0007-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:01:09.345 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:09.353 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:01:09.359 +02:00 [ERR] Connection ID "18086456113720459342", Request ID "8000004f-0002-fb00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:04:29.408 +02:00 [INF] HomeController --> Call Index
+2021-06-04 10:04:43.782 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:04:44.034 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:04:44.064 +02:00 [ERR] Connection ID "18230571323271151754", Request ID "8000008b-0007-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:04:44.207 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:04:44.216 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:04:44.225 +02:00 [ERR] Connection ID "18230571310386249769", Request ID "8000002a-0004-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:04:44.409 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:04:44.422 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:04:44.429 +02:00 [ERR] Connection ID "18374686485577203903", Request ID "800000c0-0001-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:07:04.729 +02:00 [INF] HomeController --> Call Index
+2021-06-04 10:07:28.084 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:07:28.396 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:07:28.428 +02:00 [ERR] Connection ID "18230571293206380649", Request ID "8000006a-0000-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:07:28.764 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:07:28.773 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:07:28.781 +02:00 [ERR] Connection ID "18374686485577203907", Request ID "800000c4-0001-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:07:28.905 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:07:28.917 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:07:28.927 +02:00 [ERR] Connection ID "18374686489872171113", Request ID "8000006a-0002-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:07:29.055 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:07:29.067 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:07:29.081 +02:00 [ERR] Connection ID "18374686485577203909", Request ID "800000c6-0001-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:13:24.348 +02:00 [INF] HomeController --> Call Index
+2021-06-04 10:15:23.557 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:15:23.769 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:15:23.794 +02:00 [ERR] Connection ID "18158513720643289246", Request ID "8000009f-0005-fc00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:15:24.506 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:15:24.515 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:15:24.522 +02:00 [ERR] Connection ID "18374686485577203911", Request ID "800000c8-0001-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:15:57.182 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:16:21.657 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 65
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:16:21.663 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:16:21.668 +02:00 [ERR] Connection ID "18230571318976184406", Request ID "80000057-0006-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 65
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:16:22.001 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 65
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:16:22.009 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:16:22.017 +02:00 [ERR] Connection ID "18302628887244308647", Request ID "800000a8-0000-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 65
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2021-06-04 10:16:23.056 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 65
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:16:23.062 +02:00 [ERR] An exception was thrown attempting to display the error page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Westwind.AspNetCore.LiveReload.ResponseStreamWrapper.FlushAsync(CancellationToken cancellationToken) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\ResponseStreamWrapper.cs:line 42
+   at Microsoft.AspNetCore.Http.StreamResponseBodyFeature.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, Encoding encoding, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(HttpResponse response, String text, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.DisplayException(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-04 10:16:23.066 +02:00 [ERR] Connection ID "18374686511347007566", Request ID "8000004f-0007-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Support' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.HandleHtmlInjection(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 101
+   at Westwind.AspNetCore.LiveReload.LiveReloadMiddleware.InvokeAsync(HttpContext context) in C:\projects\Westwind.AspnetCore.LiveReload\Westwind.AspnetCore.LiveReload\LiveReloadMiddleware.cs:line 65
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
