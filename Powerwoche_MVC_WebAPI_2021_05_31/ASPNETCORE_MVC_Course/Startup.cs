@@ -82,7 +82,14 @@ namespace ASPNETCORE_MVC_Course
             //Intern wird hier das EF Core (DbContext-Klasse-> ASPNETCORE_MVC_CourseContext) mit der SCOPE-Lifetime definiert. 
             //Bei jedem Request bekommen wir einen frischen Datenstand
             services.AddDbContext<MovieDbContext>(options =>
-                    options.UseInMemoryDatabase("MovieDB"));
+                    //options.UseInMemoryDatabase("MovieDB"));
+                    options.UseSqlServer(Configuration.GetConnectionString("MovieDBConnectionString")));
+
+            services.AddDbContext<NMRelationContext>(options =>
+                   //options.UseInMemoryDatabase("NMDB"));
+                   options.UseSqlServer(Configuration.GetConnectionString("NMDBConnectionString")));
+
+            
 
             //services.AddTransient(typeof(ICarService), typeof(CarService));
             //services.AddScoped(typeof(ICar), typeof(Car));
