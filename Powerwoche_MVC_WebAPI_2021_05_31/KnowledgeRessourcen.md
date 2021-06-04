@@ -1,13 +1,19 @@
 #### URLs
 
 .NET Core Framework:
+ - https://github.com/dotnet/docs
+ - https://themesof.net/
 
-  - https://themesof.net/
+ - Conference (.NET 6) -> https://www.dotnetconf.net/ (November / 2021)
 
 ASP.NET Core (General) 
 -> https://devblogs.microsoft.com/
 -> blog.ppedv.de
 
+-> Microsoft Beispiele -> https://github.com/dotnet/AspNetCore.Docs
+-> .NET Core 6 -> ASP.NET Core
+   -> Http Logging Middleware (Beispiel)
+- https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/fundamentals/http-logging
 ASP.NET Core MVC
 
 Referenzprojekt -> NopCommerce (Github) ->https://github.com/nopSolutions/nopCommerce
@@ -16,6 +22,12 @@ ASP.NET Core WebAPI
  - Hateoas -> https://code-maze.com/hateoas-aspnet-core-web-api/
  - DataShaping -> https://code-maze.com/data-shaping-aspnet-core-webapi
  - GraphQL -> https://code-maze.com/graphql-aspnetcore-basics/ +  https://code-maze.com/graphql-asp-net-core-tutorial/
+
+
+Alternative zu WebAPI
+
+-> grpc.io 
+
 
 Design Patterns & Architektur
 

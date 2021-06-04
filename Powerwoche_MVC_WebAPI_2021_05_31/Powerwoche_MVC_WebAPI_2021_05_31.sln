@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiClient_FormatterSampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI_ODATA", "WebAPI_ODATA\WebAPI_ODATA.csproj", "{AE580BA5-0600-4B4B-97E4-B68A8FEFAC80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataClient", "ODataClient\ODataClient.csproj", "{1D6AFB0C-3980-4282-898E-EAF7A5795D08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedSwaggerClient", "GeneratedSwaggerClient\GeneratedSwaggerClient.csproj", "{2C8EFB36-EDC9-4C35-B72F-0EF4A1373F9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +63,10 @@ Global
 		{AE580BA5-0600-4B4B-97E4-B68A8FEFAC80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE580BA5-0600-4B4B-97E4-B68A8FEFAC80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE580BA5-0600-4B4B-97E4-B68A8FEFAC80}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D6AFB0C-3980-4282-898E-EAF7A5795D08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D6AFB0C-3980-4282-898E-EAF7A5795D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D6AFB0C-3980-4282-898E-EAF7A5795D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D6AFB0C-3980-4282-898E-EAF7A5795D08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8EFB36-EDC9-4C35-B72F-0EF4A1373F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8EFB36-EDC9-4C35-B72F-0EF4A1373F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8EFB36-EDC9-4C35-B72F-0EF4A1373F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8EFB36-EDC9-4C35-B72F-0EF4A1373F9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
